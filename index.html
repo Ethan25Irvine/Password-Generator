@@ -37,34 +37,38 @@
     generate();
 	// the following is going to allow the user to "cutomize" their password
 	function generate(){
-            let passLength = prompt('How many characters do you want your password to be? (4-100)');
-            if ((passLength > 3) && (passLength <101)) {
-                alert ('You chose ' + passLength);
-                
-            }
-            else if ((passLength < 4) || (passLength > 100)) {
-                alert ('You must chose a number between 4 & 100');
-                return;
-            };
-            // Allows user to choose if they want Capital Letters or Lower Case Letters, or both or neither
-            let captial = confirm ('Do you want Capital Letters in your password?');
-            if (captial === true) {
-                alert ('Capital Letters have been added to your password!');
-            } 
-            let lowerCase = confirm ('Do you want Lower Case Letters in your password?');
-            if (captial === true) {
-                alert ('Lower Case Letters have been added to your password!');
-            } 
+        let passLength = prompt('How many characters do you want your password to be? (4-100)');
+        if ((passLength > 3) && (passLength <101)) {
+            alert ('You chose ' + passLength);
+            
+        }
+        else if ((passLength < 4) || (passLength > 100)) {
+            alert ('You must chose a number between 4 & 100');
+            return;
+        };
+        // Allows user to choose if they want Capital Letters or Lower Case Letters, or both or neither
+        let captial = confirm ('Do you want Capital Letters in your password? Press okay for yes and cancel for no.');
+        if (captial === true) {
+            alert ('Capital Letters have been added to your password!');
+        } 
+        let lowerCase = confirm ('Do you want Lower Case Letters in your password? Press okay for yes and cancel for no.');
+        if (captial === true) {
+            alert ('Lower Case Letters have been added to your password!');
+        } 
 
-            // This is where they get to decide if they want numbers or symbols or neither
-            let symbols = confirm ('Do you want Special Characters in your password?');
-            if (captial === true) {
-                alert ('Lower Case Letters have been added to your password!');
-            } 
-            let numbers = confirm ('Do you want Numbers in your password?');
-            if (captial === true) {
-                alert ('Lower Case Letters have been added to your password!');
-            } 
+        // This is where they get to decide if they want numbers or symbols or neither
+        let symbols = confirm ('Do you want Special Characters in your password? Press okay for yes and cancel for no.');
+        if (captial === true) {
+            alert ('Lower Case Letters have been added to your password!');
+        } 
+        let numbers = confirm ('Do you want Numbers in your password? Press okay for yes and cancel for no.');
+        if (captial === true) {
+            alert ('Lower Case Letters have been added to your password!');
+        } 
+        if ((captial === false) && (lowerCase === false) && (symbols === false) && (numbers === false)){
+            alert ('You must choose at least once option in order for us to make you a secure password!');
+            return;
+        }
     }
     </script>
   </body>
