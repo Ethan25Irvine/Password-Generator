@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+  </head>
+ 
+  <body>
+    <!-- <script src="script.js"></script> -->
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <h2>Generate a Password</h2>
+    <textarea
+      readonly
+      id="password"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
+    <button id="generate">Generate Password</button>
+    <button id="copy">
+      Copy to Clipboard
+    </button>
+    <script type="text/javascript">
+       
+
+	//list of characters (Captial Letters Lowercase Letters numbers special characters)
+	//var is function level let and const are block level {} so all three will work in this context
+	//const means the value cannot be changed once defined
+    const capLetters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+	const lowLetters = ['abcdefghijklmnopqrstuvwxyz'];
+	const num = [1234567890];
+	const sym = ['!@#$%^&*()_-='];
+
+    generate();
+	// the following is going to allow the user to "cutomize" their password
+	function generate(){
+            let passLength = prompt('How many characters do you want your password to be? (4-100)');
+            if ((passLength > 3) && (passLength <101)) {
+                alert ('You chose ' + passLength);
+                
+            }
+            else if ((passLength < 4) || (passLength > 100)) {
+                alert ('You must chose a number between 4 & 100');
+                return;
+            };
+            // Allows user to choose if they want Capital Letters or Lower Case Letters, or both or neither
+            let captial = confirm ('Do you want Capital Letters in your password?');
+            if (captial === true) {
+                alert ('Capital Letters have been added to your password!');
+            } 
+            let lowerCase = confirm ('Do you want Lower Case Letters in your password?');
+            if (captial === true) {
+                alert ('Lower Case Letters have been added to your password!');
+            } 
+
+            // This is where they get to decide if they want numbers or symbols or neither
+            let symbols = confirm ('Do you want Special Characters in your password?');
+            if (captial === true) {
+                alert ('Lower Case Letters have been added to your password!');
+            } 
+            let numbers = confirm ('Do you want Numbers in your password?');
+            if (captial === true) {
+                alert ('Lower Case Letters have been added to your password!');
+            } 
+    }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- 
+// let passLength = prompt('How long would you like your password be? (must be between 7 & 129)');
+// 	if ((passLength >=7) || (passLength <= 129))
+// 	{
+// 		alert('you chose ' + passLength);
+// 	}
+// 	else if ((passLength <= 7) || (passLength >= 129))
+// 	{
+// 		alert ('you have to choose between 7 and 129');
+// 	}
+// } -->
