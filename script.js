@@ -71,7 +71,18 @@
             return finishedPass;
         }
 
+// This is the copy to clipboard button
+function clipboard() {
+    const copyText = document.getElementById('password');
 
+    copyText.select();
+    copyText.setSelectionRange(0,99999); // for phones
+
+    document.execCommand('copy');
+
+    alert('Copied the text: ' + copyText.value);
+}
+    
 
 
 
