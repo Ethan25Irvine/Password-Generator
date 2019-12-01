@@ -1,6 +1,6 @@
 # Password-Generator
 
-(Yes the folder is mispelled because I guess I never recovered from my second grade spelling bee where I spelled science as sentence......)
+(Yes the folder is mispelled, I guess I never recovered from my second grade spelling bee where I spelled science as sentence......)
 
 This is my first project using Javascript.
 The idea is to give the user full flexability on their password (within reason).
