@@ -1,14 +1,14 @@
-//list of characters (Captial Letters Lowercase Letters numbers special characters)
+        //list of characters (Captial Letters Lowercase Letters numbers special characters)
         //var is function level let and const are block level {} so all three will work in this context
         //const means the value cannot be changed once defined
-            const capLetters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+        const capLetters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
         const lowLetters = ['abcdefghijklmnopqrstuvwxyz'];
         const num = ['1234567890'];
         const sym = ['!@#$%^&*()_-='];
         let charset = '';
 
 
-        // randomPassword();
+        
         // the following is going to allow the user to "cutomize" their password
         function randomPassword(){
             const length = prompt('How many characters do you want your password to be? (8-128)');
@@ -21,6 +21,7 @@
                 alert ('You must chose a number between 8 & 128');
                 return;
             };
+
             // Allows user to choose if they want Capital Letters or Lower Case Letters, or both or neither
             const captial = confirm ('Do you want Capital Letters in your password? Press okay for yes and cancel for no.');
             if (captial === true) {
@@ -28,8 +29,6 @@
                 let yesCap = capLetters;
                 console.log (yesCap);
                 charset += yesCap;
-                
-
             } 
             const lowerCase = confirm ('Do you want Lower Case Letters in your password? Press okay for yes and cancel for no.');
             if (lowerCase === true) {
@@ -69,7 +68,7 @@
                 console.log(finishedPass);
             }
             return finishedPass;
-        }
+        };
 
 // This is the copy to clipboard button
 function clipboard() {

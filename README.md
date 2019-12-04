@@ -3,5 +3,7 @@
 (Yes the folder is mispelled, I guess I never recovered from my second grade spelling bee where I spelled science as sentence......)
 
 This is my first project using Javascript.
-The idea is to give the user full flexability on their password (within reason).
-The first thing that I knew hwat I had to do was to make sure users stay within the limits of this page and try not to break it. 
+
+
+This webpage is designed to allow the user to create a secure password with full customization. The page is fairly simply, click the generate prompt and you will be sent a prompt asking how many characters you want, then it will go into 4 other questions about the type of characters you want in the password. Once everything is finished you will see your new password on the screen, you can then click the 'Copy to Clipboard' button and it will automatically copy the password and you can just paste it where ever you need. 
+
