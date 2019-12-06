@@ -1,6 +1,6 @@
 # Password-Generator
 
-(Yes the folder is mispelled, I guess I never recovered from my second grade spelling bee where I spelled science as sentence......)
+
 
 This is my first project using Javascript.
 
